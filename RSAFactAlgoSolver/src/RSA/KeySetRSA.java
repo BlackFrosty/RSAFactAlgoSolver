@@ -1,10 +1,12 @@
 package RSA;
 
 import java.math.*;
+import java.util.Set;
 
 public class KeySetRSA {
 	
-	public BigInteger modulus, prime1, prime2, publicExponent, privateExponent;
+	private BigInteger modulus, prime1, prime2, publicExponent, privateExponent;
+	private Set<FactorAlgoSolver> solvers;
 	
 	public KeySetRSA(BigInteger modulus, BigInteger publicExponent) {
 		this.modulus = modulus;
